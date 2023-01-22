@@ -1,0 +1,64 @@
+{% extends 'Base.html' %}
+{% load static %}
+
+
+{% block content %}
+<body>
+<div>
+<div>
+   <img  class="header_banner" src="{% static 'Picture/Banner2.png' %}">
+
+
+</div><br>
+ <div class="container text-center">
+        <img src="{% static 'Picture/Placement.png' %}" width="85%" height="auto" >
+    </div>
+    </div><br><br>
+<div class="container-fluid">
+    <div class="row">
+<!--        <img src="{% static 'Picture/Banner.png' %}" class="dept_img">-->
+        <div class="col-lg-4 col-md-6 col-sm-12">
+            <div class="card" style="width: 25rem;height:30rem;" >
+                  <div class="card-body">
+                <h3 class="card-title text-center  text-secondary ">NEWS & EVENTS</h3>
+                      <img src="{% static 'Picture/New Admission.png'  %}" style="width:350px;height:400px;">
+                  </div>
+            </div>
+
+        </div>
+        <div class="col-lg-4 col-md-6 col-sm-12">
+            <div class="card" style="width: 25rem;height:30rem;">
+                  <div class="card-body">
+                    <h3 class="card-title text-center  text-secondary">INTRODUCTION</h3><br>
+                    <p class="card-text text-justify">Polytechnic diploma course aim to create expert supervisory mid level engineers for industrial field. This is a midlevel stage between technician and engineers. Attaining diploma before engineering is an apt path to become an expert engineer in any field. Board of technical education Kerala control diploma education in the state. AICTE (All India Council of Technical Education) give affiliation to polytechnic colleges. Ma’din polytechnic college started 2011 to create expert supervisors and mid level engineers for growth of industry and society.</p>
+                  </div><br><br><br><br><br>
+            </div>
+
+        </div>
+        <div class="col-lg-4 col-md-6 col-sm-12">
+            <div class="card" style="width: 25rem;height:30rem;">
+                  <div class="card-body" >
+                    <h3 class="card-title text-center text-secondary">USEFUL VIDEOS</h3>
+<!--                      <iframe width="360" height="240"-->
+<!--                            src="https://www.youtube.com/watch?v=Q172D4SWOYE?autoplay=1&mute=1">-->
+<!--                        </iframe>-->
+                    <video width="360" height="240" autoplay>
+                        <source src="{% static 'video/Bannervideos.mp4' %}" type="video/mp4">
+                    </video>
+                  </div>
+            </div>
+
+
+          
+
+        </div>
+
+    </div><br>
+
+
+
+</div>
+</body>
+{% endblock %}
+
+

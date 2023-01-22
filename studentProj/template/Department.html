@@ -1,0 +1,46 @@
+
+{% extends 'Base.html' %}
+{% load static %}
+{% block content %}
+<div>
+    <div class="row">
+        <div class="col-lg-12">
+            <img src="{{dept.D_image.url}}" class="dept_img" style="height:500px;">
+            <div class="dept_text ">
+                <h1 class="carousel-caption text-uppercase text-transform" style="font-size:34px; "><b>{{dept.D_name}}</b></h1>
+            </div>
+            <div class="dept_para">
+                <p class="carousel-caption  text-justify">{{dept.Description}}</p>
+            </div>
+        </div>
+    </div><br>
+    <div class="row">
+       <div class="col-lg-4 col-md-4 col-sm-12">
+            <div  class="card " style="width:25rem; height:20rem; padding-top:30px;">
+                 <h3 class="card-title text-center text-uppercase ">Vision</h3>
+                 <p class="card-text text-justify" style="padding-left:10px; padding-right:10px;">{{dept.Vision}}</p>
+            </div>
+       </div>
+        <div class="col-lg-4 col-md-4 col-sm-12">
+            <div  class="card " style="width:25rem; height:20rem; padding-top:30px;" >
+                 <h3 class="card-title text-center text-uppercase">Mission</h3>
+                 <p class="card-text text-justify" style="padding-left:10px; padding-right:10px;">{{dept.Mission}}</p>
+            </div>
+       </div>
+        <div class="col-lg-4 col-md-4 col-sm-12">
+            <div  class="card " style="width:25rem; height:20rem; padding-top:30px;" >
+                 <h3 class="card-title text-center text-uppercase">Head Of Department</h3>
+                 <img src="{% static 'Picture/profile.png' %}" style="width:20rem; height:15rem; padding-left:80px; padding-bottom:10px;">
+            </div>
+       </div>
+
+    </div><br><br><br><br>
+    <div class="    container text-center">
+        <img src="{% static 'Picture/boost.png' %}" style="width:80%; height:auto; align:center;">
+<!--        <video width="100%" height="auto" autoplay>-->
+<!--                        <source src="{% static 'video/Boost.mp4' %}" type="video/mp4">-->
+<!--        </video>-->
+    </div>
+</div>
+<br><br><br><br>
+{% endblock %}
